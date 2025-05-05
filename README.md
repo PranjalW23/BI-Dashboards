@@ -1,90 +1,56 @@
+# Dashboard Documentation: Global Temperature Analysis
 
-# 📊 Business Intelligence Assignments - Power BI Reports
+## Dashboard 1: Global Land Temperatures Overview
 
-This repository contains two Power BI Desktop reports created for Business Intelligence coursework. Both assignments demonstrate the use of Power BI’s features for data visualization, transformation, and analytical reporting.
+### Overview
+This dashboard provides insights into historical land temperature trends, geographic distributions, and extreme temperature metrics across countries from 1745 to 2013.
 
----
-
-## 📁 Files
-
-- `BI ASSIGNMENT.pbix` — **Assignment 1** Power BI report.
-- `BI ASSIGNMENT 2.pbix` — **Assignment 2** Power BI report.
-
----
-
-## 🎯 Objectives
-
-- Clean, transform, and model raw datasets using Power Query Editor.
-- Create interactive dashboards for better data storytelling.
-- Use DAX for calculated fields and KPIs.
-- Provide insights through effective visual representations.
-- Demonstrate a solid understanding of Business Intelligence concepts.
+### Key Features
+1. **Geographic Spread**: Visualizes temperature distribution (possibly "Temperature Spread" instead of "Tef Upgrade").
+2. **Temperature Trends Over Years**:
+   - Sum of Average Temperature and associated Uncertainty.
+   - Time range: 1745–2013.
+3. **Extreme Temperature Metrics**:
+   - Top 10 Hottest Countries (values in millions: 6M, 4M).
+   - Minimum and Maximum Temperatures by Country (19.926°C and 30.991°C).
+4. **Country-Level Analysis**:
+   - Average Temperature by Country and Year.
+   - Temperature Range classification (Cold to Hot).
+5. **Global Average**: 17.93°C (aggregate across the dataset).
 
 ---
 
-## 📌 Assignment 1 - Overview (`BI ASSIGNMENT.pbix`)
+## Dashboard 2: Global Warming Patterns
 
-### Features:
-- **Data Transformation:** Null removal, column renaming, datatype correction.
-- **Visuals Used:**
-  - Clustered column chart
-  - Pie chart for categorical distribution
-  - Line graph for time trends
-  - Card visuals for KPIs
-- **Slicers:** Date and category filters for interactivity
-- **DAX Measures:**
-  - `Total Revenue = SUM(Sales[Revenue])`
-  - `Average Sales = AVERAGE(Sales[Amount])`
-  - `Profit % = DIVIDE([Profit], [Revenue])`
+### Overview
+Focuses on long-term climate trends, seasonal variations, and risks associated with global warming, spanning data from the 1740s to 2010s.
 
-### Sample Insights:
-- Region B had the highest sales in Q3.
-- Electronics category dominates in revenue generation.
-- Average sales show upward trend post-Q2.
+### Key Features
+1. **Global Average Temperature Over Time**: Trends across centuries.
+2. **Seasonal Analysis**:
+   - Averages for Autumn, Spring, Winter, and Summer.
+   - Monthly Seasonal Temperature chart (0–10 months, values up to 2.0M).
+3. **Temperature vs. Uncertainty**: Comparative metrics (years 1744–1751).
+4. **Extreme Cold Analysis**:
+   - Top 10 Coldest Countries (Min Avg Temperature: 40°C, possibly a typo).
+   - Countries include China, Kazakhstan, the U.S., Canada, and others.
+5. **Decadal Trends**: Average Temperature by Decade (1760s–2010s).
+6. **Risk Factors**: Listed nations with potential climate risks.
 
 ---
 
-## 📌 Assignment 2 - Overview (`BI ASSIGNMENT 2.pbix`)
-
-### Features:
-- **Advanced Data Modeling:** Relationships between multiple tables (e.g., Sales, Products, Customers).
-- **Visuals Used:**
-  - Matrix tables
-  - Stacked area charts
-  - Tree maps for category deep dives
-  - Funnel charts for sales funnel analysis
-- **Custom Calculations:**
-  - Year-over-Year Growth
-  - Top N Product Performance
-  - Customer Retention Rate
-
-### Sample Insights:
-- Sales funnel shows major drop between Interest and Purchase stages.
-- Category C had the most loyal customers over the year.
-- Top 5 products account for 60% of total revenue.
+## Data Notes & Assumptions
+- **Units**: Temperatures likely in °C; "6M/4M" may represent sums in millions.
+- **Possible Typos**:
+  - "Tef Upgrade" may refer to "Temperature Spread."
+  - "Min Avg Temperature: 40" under Coldest Countries may need verification.
+  - "Nations" under Risks is assumed to be "Nations" (intended as "Nations").
+- **Time Ranges**: Data spans from the 18th century to 2013, with decadal granularity.
 
 ---
 
-## 🛠 How to Use
+## Usage
+- Compare historical temperature trends across countries and seasons.
+- Identify high-risk regions for extreme temperatures.
+- Analyze long-term global warming patterns and uncertainties.
 
-1. Download and open the `.pbix` files using [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
-2. Use slicers and filters to explore interactive insights.
-3. Hover over visuals for detailed tooltips.
-4. Navigate through report pages using the bottom tabs.
-
----
-
-## ✅ Skills Demonstrated
-
-- Power Query for data cleaning
-- DAX for calculated columns and KPIs
-- Visual storytelling and report design
-- Interactive filtering and drill-through
-- Relational data modeling
-
----
-
-## 📌 Notes
-
-- These reports are part of academic coursework and may use sample or anonymized datasets.
-- Please ensure Power BI Desktop is installed to view the reports.
